@@ -1,6 +1,9 @@
 # DevEcoStudioProjects
 For HarmonyOS program
 
+  鸿蒙滑组查询
+![项目演示](./sc_demo.gif)
+
 # 鸿蒙MQTT协议校验App
 
 ## 项目简介
@@ -116,5 +119,4 @@ entry/src/main/ets/
     }
   }
   ```
-  鸿蒙滑组查询
-![项目演示](./sc_demo.gif)
+
