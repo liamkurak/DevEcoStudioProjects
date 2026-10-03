@@ -117,4 +117,4 @@ entry/src/main/ets/
   }
   ```
   鸿蒙滑组查询
-![项目演示](./../sc_demo.gif)
+![项目演示](./sc_demo.gif)
