@@ -1,0 +1,103 @@
+import { PageExplore } from '../marshallPageExplore/pages/PageExplore';
+import { PageMore } from '../marshallPageMore/pages/PageMore';
+import { PageHome } from './pages/PageHome'
+import { resourceManager } from '@kit.LocalizationKit';
+import { common } from '@kit.AbilityKit';
+
+@Entry
+@Component
+struct Index {
+  @State currentIndex: number = 0;
+  private tabsController: TabsController = new TabsController();
+  @Provide('appPathStack') appPathStack: NavPathStack = new NavPathStack();
+
+  @Builder
+  tabBuilder(title: string, targetIndex: number, icon: Resource) {
+    Column() {
+      Image(icon)
+        .width("24vp")
+        .height("24vp")
+        .objectFit(ImageFit.Contain)
+        .fillColor(this.currentIndex === targetIndex ? ($r('app.color.app_icon_pressed_color')) :
+          ($r('app.color.app_icon_color')))
+      Text(title)
+        .fontSize("10vp")
+        .fontColor(this.currentIndex === targetIndex ? ($r('app.color.app_icon_pressed_color')) :
+          ($r('app.color.app_icon_color')))
+        .textAlign(TextAlign.Center)
+        .lineHeight("14vp")
+        .fontWeight(500)
+    }
+    .height('100%')
+    .width('100%')
+    .justifyContent(FlexAlign.Center)
+    .alignItems(HorizontalAlign.Center)
+    .onClick(() => {
+      this.currentIndex = targetIndex;
+      this.tabsController.changeIndex(targetIndex);
+    })
+  }
+
+  getResourceValue(resource: Resource): string {
+    let context = getContext(this) as common.UIAbilityContext;
+    let manager = context.resourceManager;
+    let res = 'empty';
+    try {
+      // 注意：这里的 key 是 resources 目录下定义的资源名称，例如 app.string.app_name
+      let str: string = resource.moduleName;
+
+      manager.getStringValue(resource)
+        .then((result: string) => {
+          str = result;
+        })
+        .catch((err: BusinessError<Error>) => {
+          console.error(`err: ${err}`)
+        });
+
+      console.info(`sync getStringByNameSync result: ${str}`);
+      res = str;
+
+    } catch (error) {
+      console.error(`getStringByNameSync failed, error code: ${error.code}, message: ${error.message}.`)
+    }
+    return res;
+  }
+
+  build() {
+    Navigation(this.appPathStack) {
+      Tabs({
+        barPosition: BarPosition.End,
+        controller: this.tabsController
+      }) {
+        TabContent() {
+          PageHome()
+        }
+        .tabBar(this.tabBuilder(
+          this.getResourceValue($r('app.string.HomePage')), 0, $r("app.media.lib_icon_9")))
+
+        TabContent() {
+          PageExplore()
+        }.tabBar(this.tabBuilder('探索', 1, $r("app.media.lib_icon_7")))
+
+        TabContent() {
+          PageMore()
+        }.tabBar(this.tabBuilder('更多', 2, $r("app.media.lib_icon_83")))
+      }
+      .barWidth("100%")
+      .barHeight("76vp")
+      .barMode(BarMode.Fixed, { nonScrollableLayoutStyle: LayoutStyle.ALWAYS_CENTER })
+      .vertical(false)
+      .scrollable(false)
+      .width('100%')
+      .height('100%')
+    }
+    .backgroundColor($r('app.color.page_bg_color'))
+    .hideTitleBar(true)
+    .mode(NavigationMode.Stack)
+    .expandSafeArea([SafeAreaType.SYSTEM], [SafeAreaEdge.TOP])
+    .linearGradient({
+      angle: 180,
+      colors: [['#333333', 0.0], ['#333333', 0.06], [$r('app.color.page_bg_color'), 0.06]]
+    })
+  }
+}
