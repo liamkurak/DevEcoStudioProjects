@@ -1,0 +1,192 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "defaultForm_label",
+      "value": "form_label"
+    },
+    {
+      "name": "defaultForm_desc",
+      "value": "form_description"
+    },
+    {
+      "name": "EntryFormAbility_desc",
+      "value": "form_description"
+    },
+    {
+      "name": "EntryFormAbility_label",
+      "value": "form_label"
+    },
+    {
+      "name": "widget_desc",
+      "value": "This is a service widget."
+    },
+    {
+      "name": "widget_display_name",
+      "value": "widget"
+    },
+    {
+      "name": "widget1_desc",
+      "value": "This is a service widget."
+    },
+    {
+      "name": "widget1_display_name",
+      "value": "widget1"
+    },
+    {
+      "name": "HomePage",
+      "value": "Home"
+    },
+    {
+      "name": "explore_banner_subtitle",
+      "value": "约40小时无线续航"
+    },
+    {
+      "name": "explore_banner_button",
+      "value": "探索 BROMLEY 750"
+    },
+    {
+      "name": "category_true_wireless",
+      "value": "真无线耳机"
+    },
+    {
+      "name": "category_over_ear",
+      "value": "包耳式"
+    },
+    {
+      "name": "category_in_ear",
+      "value": "入耳式"
+    },
+    {
+      "name": "category_bluetooth_speaker",
+      "value": "蓝牙音箱"
+    },
+    {
+      "name": "category_portable",
+      "value": "便携式"
+    },
+    {
+      "name": "MorePage",
+      "value": "更多"
+    },
+    {
+      "name": "more_help",
+      "value": "帮助"
+    },
+    {
+      "name": "more_info",
+      "value": "资讯"
+    },
+    {
+      "name": "more_improve_plan",
+      "value": "改进计划"
+    },
+    {
+      "name": "more_app_language",
+      "value": "应用程序语言"
+    },
+    {
+      "name": "more_app_language_value",
+      "value": "中文/Chinese"
+    },
+    {
+      "name": "more_user_agreement",
+      "value": "用户协议和隐私政策"
+    },
+    {
+      "name": "more_open_source",
+      "value": "免费和开源软件"
+    },
+    {
+      "name": "more_about_us",
+      "value": "关于我们"
+    },
+    {
+      "name": "more_bluetooth_pairing",
+      "value": "藍牙配対"
+    },
+    {
+      "name": "more_bt_step_1",
+      "value": "1. 轻按音源按钮.."
+    },
+    {
+      "name": "more_bt_step_2",
+      "value": "2. 按住音源按钮2秒."
+    },
+    {
+      "name": "more_bt_step_3",
+      "value": "3. 启用手机⋯"
+    },
+    {
+      "name": "more_bt_step_4",
+      "value": "4. 从可用的设备列表中.."
+    },
+    {
+      "name": "more_info_receive",
+      "value": "接收消息"
+    },
+    {
+      "name": "more_info_desc",
+      "value": "深入了解如何使用您的产品.."
+    },
+    {
+      "name": "more_info_registered",
+      "value": "您已注册："
+    },
+    {
+      "name": "more_info_email",
+      "value": "kurak@foxmail.com"
+    },
+    {
+      "name": "more_app_version",
+      "value": "应用程序版本270000.1.0（260929.35）"
+    },
+    {
+      "name": "more_info_privacy",
+      "value": "我们会谨慎保护您的电子邮件地址.."
+    },
+    {
+      "name": "more_info_unsubscribe",
+      "value": "取消订阅"
+    },
+    {
+      "name": "more_improv_join",
+      "value": "参与改进计划"
+    },
+    {
+      "name": "more_improv_desc",
+      "value": "系统会将用户的使用数据以匿名形式自动发"
+    },
+    {
+      "name": "more_improv_list_title",
+      "value": "Marshall 将分析下列非个人信息："
+    },
+    {
+      "name": "more_improv_item_1",
+      "value": "交互特征使得常用功能更加简单和完善"
+    },
+    {
+      "name": "more_improv_item_2",
+      "value": "设备连接状况以更好地支持相关设备"
+    },
+    {
+      "name": "more_improv_item_3",
+      "value": "系统的稳定性以防止出现崩溃和系统故障"
+    },
+    {
+      "name": "more_improv_share",
+      "value": "我想共享我的匿名数据"
+    }
+  ]
+}
