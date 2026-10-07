@@ -3,6 +3,34 @@
     {
       "name": "HomePage",
       "value": "家用"
+    },
+    {
+      "name": "explore_banner_subtitle",
+      "value": "约40小时无线续航"
+    },
+    {
+      "name": "explore_banner_button",
+      "value": "探索 BROMLEY 750"
+    },
+    {
+      "name": "category_true_wireless",
+      "value": "真无线耳机"
+    },
+    {
+      "name": "category_over_ear",
+      "value": "包耳式"
+    },
+    {
+      "name": "category_in_ear",
+      "value": "入耳式"
+    },
+    {
+      "name": "category_bluetooth_speaker",
+      "value": "蓝牙音箱"
+    },
+    {
+      "name": "category_portable",
+      "value": "便携式"
     }
   ]
 }

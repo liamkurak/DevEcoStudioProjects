@@ -1,4 +1,5 @@
 import { AddDevice } from './AddDevice';
+import { Explore } from './Explore';
 
 @Entry
 @Component
@@ -67,7 +68,7 @@ struct Index {
           .height('100%')
         } else if (this.currentPageIndex === 1) {
           // Explore Page
-          // Explore()
+          Explore();
         } else {
           // More Page
           // More()
