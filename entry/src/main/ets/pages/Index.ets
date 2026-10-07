@@ -1,5 +1,6 @@
 import { AddDevice } from './AddDevice';
 import { Explore } from './Explore';
+import { More } from './More';
 
 @Entry
 @Component
@@ -71,7 +72,7 @@ struct Index {
           Explore();
         } else {
           // More Page
-          // More()
+          More();
         }
       }
       .width('100%')
